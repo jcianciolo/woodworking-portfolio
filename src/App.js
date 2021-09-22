@@ -1,25 +1,21 @@
 import logo from './logo.svg';
 import './App.css';
+import ButtonAppBar from './components/ButtonAppBar';
+import Typography from '@mui/material/Typography';
+import StandardImageList from './components/StandardImageList';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ButtonAppBar />
+      <Typography variant="h2" sx={{ margin: 5 }}>Signature Collection</Typography>
+      <Typography variant="subtitle1" sx={{ margin: 5 }}>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis dolores est quas soluta officiis provident beatae sapiente at mollitia eveniet, maxime facilis quod officia sunt aliquid dolorem eius iste asperiores.
+      </Typography>
+      <StandardImageList />
     </div>
   );
 }
 
 export default App;
+// <CustomImageList />
