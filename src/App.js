@@ -3,6 +3,7 @@ import ButtonAppBar from './components/ButtonAppBar';
 import Typography from '@mui/material/Typography';
 import StandardImageList from './components/StandardImageList';
 import About from './components/About';
+import Contact from './components/Contact';
 import { useState } from 'react'
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
       </div>}
 
       {aboutMe && <About />}
+      {contact && <Contact />}
 
     </div>
   );
