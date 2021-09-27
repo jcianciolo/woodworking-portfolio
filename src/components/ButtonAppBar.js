@@ -9,10 +9,31 @@ import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import Link from '@mui/material/Link'
 
-export default function ButtonAppBar() {
+export default function ButtonAppBar({ gallery, setGallery, aboutMe, setAboutMe, contact, setContact }) {
+  const handleClick = (e) => {
+    if (e.target.value === 'Gallery') {
+        setGallery(true)
+        setAboutMe(false)
+        setContact(false)
+    }
+
+    if (e.target.value === 'About Me') {
+      setAboutMe(true)
+      setGallery(false)
+      setContact(false)
+    }
+
+    if (e.target.value === 'Contact') {
+      setContact(true)
+      setGallery(false)
+      setAboutMe(false)
+    
+}
+  }
+
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static" enableColorOnDark>
+      <AppBar position="static" sx={{ bgcolor: 'text.secondary' }} enableColorOnDark>
         <Toolbar sx={{ justifyContent:"space-between" }}>
           <IconButton
             size="large"
@@ -24,10 +45,10 @@ export default function ButtonAppBar() {
             <MenuIcon />
           </IconButton>
 
-          <ButtonGroup color="inherit" aria-label="text button group">
-            <Button>About Me</Button>
-            <Button>Projects</Button>
-            <Button>Contact</Button>
+          <ButtonGroup color="inherit" aria-label="text button group" sx={{ display: { xs: 'none', lg: 'flex' } }}>
+            <Button onClick={handleClick} value='Gallery'>Gallery</Button>
+            <Button onClick={handleClick} value='About Me'>About Me</Button>
+            <Button onClick={handleClick} value='Contact'>Contact</Button>
           </ButtonGroup>
         </Toolbar>
       </AppBar>

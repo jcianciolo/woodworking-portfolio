@@ -7,19 +7,21 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import { CardActionArea } from '@mui/material';
 import Typography from '@mui/material/Typography'
+import { useState, useEffect } from 'react';
 
 export default function StandardImageList() {
+
   return (
-    <ImageList sx={{ flexGrow: 1 }} className="image-list" cols={3}>
-      {itemData.map((item) => (
+    <ImageList sx={{ flexGrow: 1 }} className="image-list" cols={4} gap={12}>
+      {itemData && itemData.map((item) => (
         <Card>
           <CardActionArea>
             <CardMedia>
-              <ImageListItem key={item.img}>
+              <ImageListItem key={item.id}>
                 <img
                   src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
                   srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
-                  alt={item.title}
+                  alt={item.author}
                   loading="lazy"
                 />
                 <ImageListItemBar
