@@ -21,13 +21,14 @@ function App() {
         contact={contact}
         setContact={setContact}
       />
-      {gallery && <div>
-        <Typography variant="h2" sx={{ margin: 5 }}>Signature Collection</Typography>
-        <Typography variant="subtitle1" sx={{ margin: 5 }}>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis dolores est quas soluta officiis provident beatae sapiente at mollitia eveniet, maxime facilis quod officia sunt aliquid dolorem eius iste asperiores.
-        </Typography>
-        <StandardImageList />
-      </div>}
+      {gallery && 
+        <div>
+          <Typography variant="h2" sx={{ margin: 5 }}>Signature Collection</Typography>
+          <Typography variant="subtitle1" sx={{ margin: 5 }}>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis dolores est quas soluta officiis provident beatae sapiente at mollitia eveniet, maxime facilis quod officia sunt aliquid dolorem eius iste asperiores.
+          </Typography>
+          <StandardImageList />
+        </div>}
 
       {aboutMe && <About />}
       {contact && <Contact />}

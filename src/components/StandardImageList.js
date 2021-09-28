@@ -12,7 +12,7 @@ import { useState, useEffect } from 'react';
 export default function StandardImageList() {
 
   return (
-    <ImageList sx={{ flexGrow: 1 }} className="image-list" cols={4} gap={12}>
+    <ImageList sx={{ flexGrow: 1 }} className="image-list" cols={4} gap={4}>
       {itemData && itemData.map((item) => (
         <Card>
           <CardActionArea>
