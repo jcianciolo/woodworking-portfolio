@@ -9,7 +9,7 @@ import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import Link from '@mui/material/Link'
 
-export default function ButtonAppBar({ gallery, setGallery, aboutMe, setAboutMe, contact, setContact }) {
+export default function ButtonAppBar({ setGallery, setAboutMe, setContact }) {
   const handleClick = (e) => {
     if (e.target.value === 'Gallery') {
         setGallery(true)
@@ -45,10 +45,10 @@ export default function ButtonAppBar({ gallery, setGallery, aboutMe, setAboutMe,
             <MenuIcon />
           </IconButton>
 
-          <ButtonGroup color="inherit" aria-label="text button group" sx={{ display: { xs: 'none', lg: 'flex' } }}>
-            <Button onClick={handleClick} value='Gallery'>Gallery</Button>
-            <Button onClick={handleClick} value='About Me'>About Me</Button>
-            <Button onClick={handleClick} value='Contact'>Contact</Button>
+          <ButtonGroup onClick={handleClick} color="inherit" aria-label="text button group" sx={{ display: { xs: 'none', lg: 'flex' } }}>
+            <Button value='Gallery'>Gallery</Button>
+            <Button value='About Me'>About Me</Button>
+            <Button value='Contact'>Contact</Button>
           </ButtonGroup>
         </Toolbar>
       </AppBar>
