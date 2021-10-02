@@ -8,6 +8,7 @@ import ButtonGroup from '@mui/material/ButtonGroup';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import Link from '@mui/material/Link'
+import Avatar from '@mui/material/Avatar';
 
 export default function ButtonAppBar({ setGallery, setAboutMe, setContact }) {
   const handleClick = (e) => {
@@ -33,18 +34,10 @@ export default function ButtonAppBar({ setGallery, setAboutMe, setContact }) {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static" sx={{ bgcolor: 'text.secondary' }} enableColorOnDark>
+      <AppBar position="static" enableColorOnDark>
         <Toolbar sx={{ justifyContent:"space-between" }}>
-          <IconButton
-            size="large"
-            edge="start"
-            color="inherit"
-            aria-label="menu"
-            sx={{ mr: 2 }}
-          >
-            <MenuIcon />
-          </IconButton>
 
+          <Avatar alt='ajk' src='https://images.squarespace-cdn.com/content/v1/559c3ccce4b0cebfa4ebbf72/1436844658707-OQ5WMM3I9X4KBPCFISFF/simple+logo+art+and+wood.jpg' />
           <ButtonGroup onClick={handleClick} color="inherit" aria-label="text button group" sx={{ display: { xs: 'none', lg: 'flex' } }}>
             <Button value='Gallery'>Gallery</Button>
             <Button value='About Me'>About Me</Button>
@@ -55,3 +48,14 @@ export default function ButtonAppBar({ setGallery, setAboutMe, setContact }) {
     </Box>
   );
 }
+
+// <IconButton
+// size="large"
+// edge="start"
+// color="inherit"
+// aria-label="menu"
+// sx={{ mr: 2 }}
+// >
+// <MenuIcon />
+
+// </IconButton>

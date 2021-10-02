@@ -12,7 +12,7 @@ import { useState, useEffect } from 'react';
 export default function StandardImageList() {
 
   return (
-    <ImageList sx={{ flexGrow: 1 }} className="image-list" cols={4} gap={4}>
+    <ImageList sx={{ flexGrow: 1 }} className="image-list" gap={6}>
       {itemData && itemData.map((item) => (
         <Card>
           <CardActionArea>
@@ -27,7 +27,7 @@ export default function StandardImageList() {
                 <ImageListItemBar
                   title={item.title}
                   subtitle={<span>by: {item.author}</span>}
-                  position="top"
+                  position="bottom"
                 />
               </ImageListItem>
             </CardMedia>
