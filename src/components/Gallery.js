@@ -5,36 +5,45 @@ import ImageListItemBar from '@mui/material/ImageListItemBar';
 import Card from '@mui/material/Card';
 import CardMedia from '@mui/material/CardMedia';
 import { CardActionArea } from '@mui/material';
+import Typography from '@mui/material/Typography';
+import Button from '@mui/material/Button'
 
 
-
-export default function StandardImageList() {
+export default function Gallery() {
 
   return (
-    <ImageList variant="masonry" className="image-list" cols={3} gap={6}>
-      {itemData && itemData.map((item) => (
-        <Card>
-          <CardActionArea>
-            <CardMedia>
-              <ImageListItem key={item.id}>
-                <img
-                  src={`${item.img}?w=248&fit=crop&auto=format`}
-                  srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
-                  alt={item.author}
-                  loading="lazy"
-                />
-                <ImageListItemBar
-                  title={item.title}
-                  subtitle={<span>by: {item.author}</span>}
-                  position="bottom"
-                />
-              </ImageListItem>
-            </CardMedia>
-          </CardActionArea>
-        </Card>
+    <>
+        <Typography variant="h2" sx={{ margin: 5 }}>Signature Collection</Typography>
+        <Typography variant="body1" sx={{ marginLeft: 45, marginRight: 45 }} gutterBottom >
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis dolores est quas soluta officiis provident beatae sapiente at mollitia eveniet, maxime facilis quod officia sunt aliquid dolorem eius iste asperiores.
+        </Typography>
+        <Button variant="contained">See the process</Button>
+        <Button variant="outlined">Request an order</Button>
+        <ImageList variant="masonry" className="image-list" cols={3} gap={6}>
+        {itemData && itemData.map((item) => (
+            <Card>
+            <CardActionArea>
+                <CardMedia>
+                <ImageListItem key={item.id}>
+                    <img
+                    src={`${item.img}?w=248&fit=crop&auto=format`}
+                    srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
+                    alt={item.author}
+                    loading="lazy"
+                    />
+                    <ImageListItemBar
+                    title={item.title}
+                    subtitle={<span>by: {item.author}</span>}
+                    position="bottom"
+                    />
+                </ImageListItem>
+                </CardMedia>
+            </CardActionArea>
+            </Card>
 
-      ))}
-    </ImageList>
+        ))}
+        </ImageList>
+    </>
   );
 }
 

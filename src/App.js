@@ -1,10 +1,9 @@
 import './App.css';
 import ButtonAppBar from './components/ButtonAppBar';
-import Typography from '@mui/material/Typography';
-import StandardImageList from './components/StandardImageList';
+import Gallery from './components/Gallery';
 import About from './components/About';
 import Contact from './components/Contact';
-import { useState } from 'react'
+import { useState } from 'react';
 
 function App() {
   const [gallery, setGallery] = useState(true)
@@ -21,14 +20,7 @@ function App() {
         contact={contact}
         setContact={setContact}
       />
-      {gallery && 
-        <div>
-          <Typography variant="h2" sx={{ margin: 5 }}>Signature Collection</Typography>
-          <Typography variant="subtitle1" sx={{ margin: 5 }}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis dolores est quas soluta officiis provident beatae sapiente at mollitia eveniet, maxime facilis quod officia sunt aliquid dolorem eius iste asperiores.
-          </Typography>
-          <StandardImageList />
-        </div>}
+      {gallery && <Gallery />}
 
       {aboutMe && <About />}
       {contact && <Contact />}
