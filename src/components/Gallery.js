@@ -4,7 +4,7 @@ import ImageListItem from '@mui/material/ImageListItem';
 import ImageListItemBar from '@mui/material/ImageListItemBar';
 import Card from '@mui/material/Card';
 import CardMedia from '@mui/material/CardMedia';
-import { CardActionArea } from '@mui/material';
+import { CardActionArea, Stack } from '@mui/material';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button'
 
@@ -17,8 +17,10 @@ export default function Gallery() {
         <Typography variant="body1" sx={{ marginLeft: 45, marginRight: 45 }} gutterBottom >
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis dolores est quas soluta officiis provident beatae sapiente at mollitia eveniet, maxime facilis quod officia sunt aliquid dolorem eius iste asperiores.
         </Typography>
-        <Button variant="contained">See the process</Button>
-        <Button variant="outlined">Request an order</Button>
+        <Stack sx={{ pt: 4, marginBottom: 5 }} direction="row" spacing={2} justifyContent="center">
+            <Button variant="contained">See the process</Button>
+            <Button variant="outlined">Request an order</Button>
+        </Stack>
         <ImageList variant="masonry" className="image-list" cols={3} gap={6}>
         {itemData && itemData.map((item) => (
             <Card>
