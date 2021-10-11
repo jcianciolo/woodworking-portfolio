@@ -22,7 +22,7 @@ const Contact = () => {
                     placeholder="Placeholder"
                     multiline
                     rows={6}
-                    sx={{ width: '30rem', marginTop: '5px' }}
+                    sx={{ width: '30rem' }}
                 />
                 <div>
                     <Button variant="contained" sx={{ width: '30rem' }} endIcon={<SendIcon />}>
