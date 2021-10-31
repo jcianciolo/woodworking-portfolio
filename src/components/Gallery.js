@@ -26,7 +26,7 @@ export default function Gallery() {
             <Card>
             <CardActionArea>
                 <CardMedia>
-                <ImageListItem key={item.id}>
+                <ImageListItem key={item.title}>
                     <img
                     src={`${item.img}?w=248&fit=crop&auto=format`}
                     srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
