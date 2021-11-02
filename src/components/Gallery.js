@@ -20,51 +20,51 @@ import {
 
 
 export default function Gallery({itemData}) {
-let { path, url } = useRouteMatch();
+  let { path, url } = useRouteMatch();
 
   return (
     <>
-        <Typography variant="h2" sx={{ margin: 5 }}>Signature Collection</Typography>
-        <Typography variant="body1" sx={{ marginLeft: 45, marginRight: 45 }} gutterBottom >
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis dolores est quas soluta officiis provident beatae sapiente at mollitia eveniet, maxime facilis quod officia sunt aliquid dolorem eius iste asperiores.
-        </Typography>
-        <Stack sx={{ pt: 4, marginBottom: 5 }} direction="row" spacing={2} justifyContent="center">
-            <Button variant="contained">See the process</Button>
-            <Button variant="outlined">Request an order</Button>
-        </Stack>
-        <ImageList variant="masonry" className="image-list" cols={3} gap={6}>
-        {itemData && itemData.map((item, index) => (
-            <Card id={index}>
-            <CardActionArea>
-              <Link to={`./${url}`}> 
-                <CardMedia>
-                <ImageListItem key={item.title}>
-                    <img
-                    src={`${item.img}?w=248&fit=crop&auto=format`}
-                    srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
-                    alt={item.author}
-                    loading="lazy"
-                    />
-                    <ImageListItemBar
-                    title={item.title}
-                    subtitle={<span>by: {item.author}</span>}
-                    position="bottom"
-                    />
-                </ImageListItem>
-                </CardMedia>
-              </Link>
-            </CardActionArea>
-            </Card>
-
-        ))}
-        </ImageList>
-
+        
         <Switch>
           <Route path={`${path}/:itemId`}>
-            <Item/>
+            <Item itemData={itemData} />
           </Route>
           <Route exact path={path}>
-            <h3>Please select an item.</h3>
+          <Typography variant="h2" sx={{ margin: 5 }}>Signature Collection</Typography>
+          <Typography variant="body1" sx={{ marginLeft: 45, marginRight: 45 }} gutterBottom >
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis dolores est quas soluta officiis provident beatae sapiente at mollitia eveniet, maxime facilis quod officia sunt aliquid dolorem eius iste asperiores.
+          </Typography>
+          <Stack sx={{ pt: 4, marginBottom: 5 }} direction="row" spacing={2} justifyContent="center">
+              <Button variant="contained">See the process</Button>
+              <Button variant="outlined">Request an order</Button>
+          </Stack>
+          <ImageList variant="masonry" className="image-list" cols={3} gap={6}>
+          {itemData && itemData.map((item, index) => (
+              <Card id={index}>
+              <CardActionArea>
+                <Link to={`${url}/${index}`}> 
+                  <CardMedia>
+                  <ImageListItem key={item.title}>
+                      <img
+                      src={`${item.img}?w=248&fit=crop&auto=format`}
+                      srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
+                      alt={item.author}
+                      loading="lazy"
+                      />
+                      <ImageListItemBar
+                      title={item.title}
+                      subtitle={<span>by: {item.author}</span>}
+                      position="bottom"
+                      />
+                  </ImageListItem>
+                  </CardMedia>
+                </Link>
+              </CardActionArea>
+              </Card>
+  
+          ))}
+          </ImageList>
+  
           </Route>
       </Switch>
     </>

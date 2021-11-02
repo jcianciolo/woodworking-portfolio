@@ -2,7 +2,7 @@ import React from 'react'
 import Typography from '@mui/material/Typography'
 import Grid from '@mui/material/Grid'
 
-const About = () => {
+const Home = () => {
     const home = 'Hello, this is the home page.'
     return (
         <>
@@ -22,4 +22,4 @@ const About = () => {
     )
 }
 
-export default About
+export default Home
