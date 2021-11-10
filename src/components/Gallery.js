@@ -38,7 +38,7 @@ export default function Gallery({itemData}) {
               <Button variant="contained">See the process</Button>
               <Button variant="outlined">Request an order</Button>
           </Stack>
-          <ImageList variant="masonry" className="image-list" cols={3} gap={6}>
+          <ImageList variant="masonry" className="image-list" cols={3}>
           {itemData && itemData.map((item, index) => (
               <Card id={index}>
               <CardActionArea>
