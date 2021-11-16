@@ -38,28 +38,28 @@ export default function Gallery({itemData}) {
               <Button variant="contained">See the process</Button>
               <Button variant="outlined">Request an order</Button>
           </Stack>
-          <ImageList variant="masonry" className="image-list" cols={3}>
+          <ImageList variant="masonry" className="image-list" cols={3} gap={6}>
           {itemData && itemData.map((item, index) => (
               <Card id={index}>
-              <CardActionArea>
-                <Link to={`${url}/${index}`}> 
-                  <CardMedia>
-                  <ImageListItem key={item.title}>
-                      <img
-                      src={`${item.img}?w=248&fit=crop&auto=format`}
-                      srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
-                      alt={item.author}
-                      loading="lazy"
-                      />
-                      <ImageListItemBar
-                      title={item.title}
-                      subtitle={<span>by: {item.author}</span>}
-                      position="bottom"
-                      />
-                  </ImageListItem>
-                  </CardMedia>
-                </Link>
-              </CardActionArea>
+                <CardActionArea>
+                  <Link to={`${url}/${index}`}> 
+                    <CardMedia>
+                    <ImageListItem key={item.title}>
+                        <img
+                        src={`${item.img}?w=248&fit=crop&auto=format`}
+                        srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
+                        alt={item.author}
+                        loading="lazy"
+                        />
+                        <ImageListItemBar
+                        title={item.title}
+                        subtitle={<span>by: {item.author}</span>}
+                        position="top"
+                        />
+                    </ImageListItem>
+                    </CardMedia>
+                  </Link>
+                </CardActionArea>
               </Card>
   
           ))}

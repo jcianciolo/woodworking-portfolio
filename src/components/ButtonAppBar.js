@@ -16,7 +16,7 @@ export default function ButtonAppBar() {
         <Link className="link" to="/gallery">
           <Avatar alt='ajk' src='https://images.squarespace-cdn.com/content/v1/559c3ccce4b0cebfa4ebbf72/1436844658707-OQ5WMM3I9X4KBPCFISFF/simple+logo+art+and+wood.jpg' />
         </Link>
-          <ButtonGroup color="inherit" aria-label="text button group" sx={{ display: { xs: 'none', lg: 'flex' } }}>
+          <ButtonGroup color="inherit"  aria-label="text button group">
             <Button value='Gallery'><Link className="link" to="/gallery">Gallery</Link></Button>
             <Button value='About Me'><Link className="link" to="/about">About Me</Link></Button>
             <Button value='Contact'><Link className="link" to="/contact">Contact</Link></Button>
