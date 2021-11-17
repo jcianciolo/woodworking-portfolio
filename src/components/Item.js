@@ -4,7 +4,7 @@ import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 import Card from '@mui/material/Card';
 import CardMedia from '@mui/material/CardMedia';
-import { CardActionArea, Stack } from '@mui/material';
+import { CardActionArea, CardContent, Stack } from '@mui/material';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
@@ -30,7 +30,7 @@ const Item = ({ itemData }) => {
             <Typography variant="h2" sx={{ margin: 5 }}>{item.title}</Typography>
 
             <Grid container sx={{ justifyContent: 'space-evenly', alignItems: 'center' }}>
-                <Grid item xs={12} sm={8} md={5} >
+                <Grid item xs={12} sm={8} md={6}>
                 <Box sx={{ height: 600, overflowY: 'scroll' }}>
                     <ImageList variant="masonry" >
                         {item.secondaryImages.map((image) => (
@@ -52,39 +52,42 @@ const Item = ({ itemData }) => {
                     </ImageList>
                 </Box>
                 </Grid>
-                <Grid item xs={12} sm={8} md={5}>
+                <Grid item xs={12} sm={8} md={4}>
                     <Card raised>
-                        <Typography variant="h4" sx={{ margin: 5 }}>{ itemDescription }</Typography>
-                        <nav aria-label="main mailbox folders">
-                            <Divider />
-                                <List sx={{ justifyContent: 'center' }}>
-                                    <ListItem disablePadding>
-                                        <ListItemButton>
-                                        <ListItemIcon>
-                                            <SquareFootIcon fontSize="large" />
-                                        </ListItemIcon>
-                                        <ListItemText primary={`${item.size}, ${item.weight}`} />
-                                        </ListItemButton>
-                                    </ListItem>
-                                    <ListItem disablePadding>
-                                        <ListItemButton>
-                                        <ListItemIcon>
-                                            <ParkIcon fontSize="large" />
-                                        </ListItemIcon>
-                                        <ListItemText primary={item.materials} />
-                                        </ListItemButton>
-                                    </ListItem>
-                                    <ListItem disablePadding>
-                                        <ListItemButton>
-                                        <ListItemIcon>
-                                            <LocalOfferIcon fontSize="large"/>
-                                        </ListItemIcon>
-                                        <ListItemText primary={`$ ${item.price}`} />
-                                        </ListItemButton>
-                                    </ListItem>
-                                </List>
-                        </nav>
-                    </Card>
+                        <CardContent>
+
+                        <Typography variant="h4" sx={{ margin: 5 }}>{ item.description }</Typography>
+
+                        <Divider />
+
+                        <List>
+                                <ListItem disablePadding>
+                                    <ListItemButton>
+                                    <ListItemIcon>
+                                        <SquareFootIcon fontSize="large" />
+                                    </ListItemIcon>
+                                    <ListItemText primary={`${item.size}, ${item.weight}`} />
+                                    </ListItemButton>
+                                </ListItem>
+                                <ListItem disablePadding>
+                                    <ListItemButton>
+                                    <ListItemIcon>
+                                        <ParkIcon fontSize="large" />
+                                    </ListItemIcon>
+                                    <ListItemText primary={item.materials} />
+                                    </ListItemButton>
+                                </ListItem>
+                                <ListItem disablePadding>
+                                    <ListItemButton>
+                                    <ListItemIcon>
+                                        <LocalOfferIcon fontSize="large"/>
+                                    </ListItemIcon>
+                                    <ListItemText primary={`$ ${item.price}`} />
+                                    </ListItemButton>
+                                </ListItem>
+                            </List>
+                        </CardContent>
+                    </Card>  
                 </Grid>
             </Grid>
         </>

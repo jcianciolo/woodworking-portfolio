@@ -53,7 +53,7 @@ export default function Gallery({itemData}) {
                         />
                         <ImageListItemBar
                         title={item.title}
-                        subtitle={<span>by: {item.author}</span>}
+
                         position="top"
                         />
                     </ImageListItem>
