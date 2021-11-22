@@ -26,23 +26,3 @@ export default function ButtonAppBar() {
     </Box>
   );
 }
-//   const handleClick = (e) => {
-//     if (e.target.value === 'Gallery') {
-//         setGallery(true)
-//         setAboutMe(false)
-//         setContact(false)
-//     }
-
-//     if (e.target.value === 'About Me') {
-//       setAboutMe(true)
-//       setGallery(false)
-//       setContact(false)
-//     }
-
-//     if (e.target.value === 'Contact') {
-//       setContact(true)
-//       setGallery(false)
-//       setAboutMe(false)
-    
-// }
-//   }

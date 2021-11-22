@@ -14,8 +14,6 @@ import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import Divider from '@mui/material/Divider';
-import InboxIcon from '@mui/icons-material/Inbox';
-import DraftsIcon from '@mui/icons-material/Drafts';
 import ParkIcon from '@mui/icons-material/Park';
 import LocalOfferIcon from '@mui/icons-material/LocalOffer';
 import SquareFootIcon from '@mui/icons-material/SquareFoot';
@@ -23,11 +21,11 @@ import SquareFootIcon from '@mui/icons-material/SquareFoot';
 const Item = ({ itemData }) => {
     let { itemId } = useParams();
     const item = itemData[itemId];
-    const itemDescription = 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda illo, dolore reiciendis ratione autem, amet facere architecto quos nisi ducimus maxime esse minus placeat provident repellendus culpa odit velit doloribus?'
     
     return (
         <>
-            <Typography variant="h2" sx={{ margin: 5 }}>{item.title}</Typography>
+            <Typography variant="h2" sx={{ margin: 3 }}>{item.title}</Typography>
+
 
             <Grid container sx={{ justifyContent: 'space-evenly', alignItems: 'center' }}>
                 <Grid item xs={12} sm={8} md={6}>
@@ -54,11 +52,11 @@ const Item = ({ itemData }) => {
                 </Grid>
                 <Grid item xs={12} sm={8} md={4}>
                     <Card raised>
-                        <CardContent>
+
 
                         <Typography variant="h4" sx={{ margin: 5 }}>{ item.description }</Typography>
 
-                        <Divider />
+                        <Divider variant="middle"/>
 
                         <List>
                                 <ListItem disablePadding>
@@ -86,7 +84,7 @@ const Item = ({ itemData }) => {
                                     </ListItemButton>
                                 </ListItem>
                             </List>
-                        </CardContent>
+
                     </Card>  
                 </Grid>
             </Grid>
