@@ -9,6 +9,9 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import Item from './Item'
 import { useState } from 'react'
+import ButtonAppBar from './ButtonAppBar';
+
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -24,6 +27,7 @@ export default function Gallery({itemData}) {
 
   return (
     <>
+      <ButtonAppBar />
         
         <Switch>
           <Route path={`${path}/:itemId`}>

@@ -10,3 +10,20 @@
 .link {
   all: unset;
 }
+
+.home-page {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background-image: url("https://images.squarespace-cdn.com/content/v1/559c3ccce4b0cebfa4ebbf72/1502746873070-K8K1H7E3L3KR0YQYKN3Y/IMG_5984%2Bfixed+fixed.jpg");
+  background-position: center center;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.home-button {
+
+  z-index: 1;
+}

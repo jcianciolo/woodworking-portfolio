@@ -1,6 +1,8 @@
 import React from 'react'
 import Typography from '@mui/material/Typography'
 import Grid from '@mui/material/Grid'
+import ButtonAppBar from './ButtonAppBar';
+
 
 const About = () => {
     const aboutMe = "In 2014 I graduated from UC Berkeley with a BA in architecture and a nagging desire to explore form and space with something I could touch and understand with my hands. After graduating I worked in fabrication shops and used my skills to draft and 3d render for furniture companies. As I gained practical knowledge from my career I decided to focus more of my time on designing and building for myself in my studio I had assembled through the years. Since then, I've been voraciously learning everything I can about the process of an artist and craftsman." +
@@ -8,6 +10,8 @@ const About = () => {
     "A tree has a story to tell. Ideally a piece of furniture can provoke and create an understanding of nature from within the home. Trees have wisdom in their form, their color, their texture, and their resilience. My aim is to highlight what makes a specific tree special so that a human can interact with and grow to understand its full beauty."
     return (
         <>
+            <ButtonAppBar />
+
             <Typography variant="h2" sx={{ margin: 5 }}>About the artist</Typography>
             
             <Grid container sx={{ justifyContent: 'space-evenly', alignItems: 'center' }}>

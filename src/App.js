@@ -16,7 +16,6 @@ function App() {
   return (
     <Router>
       <div className="App">
-      <ButtonAppBar />
       
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}

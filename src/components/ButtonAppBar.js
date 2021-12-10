@@ -7,13 +7,14 @@ import ButtonGroup from '@mui/material/ButtonGroup';
 import Avatar from '@mui/material/Avatar';
 import { Link } from "react-router-dom";
 
+
 export default function ButtonAppBar() {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static" enableColorOnDark>
         <Toolbar sx={{ justifyContent:"space-between" }}>
-        <Link className="link" to="/gallery">
+        <Link className="link" to="/">
           <Avatar alt='ajk' src='https://images.squarespace-cdn.com/content/v1/559c3ccce4b0cebfa4ebbf72/1436844658707-OQ5WMM3I9X4KBPCFISFF/simple+logo+art+and+wood.jpg' />
         </Link>
           <ButtonGroup color="inherit" variant="text" aria-label="text button group">

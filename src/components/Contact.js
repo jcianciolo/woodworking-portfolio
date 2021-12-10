@@ -3,10 +3,14 @@ import Typography from '@mui/material/Typography'
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField'
 import SendIcon from '@mui/icons-material/Send';
+import ButtonAppBar from './ButtonAppBar';
+
 
 const Contact = () => {
     return (
         <>
+            <ButtonAppBar />
+
             <Typography variant="h2" sx={{ marginTop: 5 }}>Contact Me</Typography>
             <Typography variant="subtitle1" sx={{ margin: 2 }}>
                 Please contact me with any questions or requests!
