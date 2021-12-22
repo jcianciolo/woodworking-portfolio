@@ -1,3 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Rubik:wght@300;400;600;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Roboto Mono', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: 'Roboto Mono', source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
 .App {
   text-align: center;
 }
@@ -13,17 +30,26 @@
 
 .home-page {
   display: flex;
+  flex-direction: column;
   width: 100%;
   height: 100vh;
-  background-image: url("https://images.squarespace-cdn.com/content/v1/559c3ccce4b0cebfa4ebbf72/1502746873070-K8K1H7E3L3KR0YQYKN3Y/IMG_5984%2Bfixed+fixed.jpg");
-  background-position: center center;
+  background-image: url("https://images.squarespace-cdn.com/content/v1/559c3ccce4b0cebfa4ebbf72/1492815471225-Q8RTS79AQH2MPY9ROMJG/IMG_5976.JPG?format=750w");
   background-size: cover;
   justify-content: center;
   align-items: center;
-  align-content: center;
 }
 
-.home-button {
+.home-border {
+  /* border: 3px solid black;
+  border-radius: 10px; */
+  z-index: 2;
+}
 
-  z-index: 1;
+.home-content {
+  padding: 30px 20px 0px 20px;
+  font-weight: 700px;
+  border-radius: 10px;
+  /* background-color: rgba(255, 255, 255, 0.5); */
+  color: white;
+  /* box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; */
 }

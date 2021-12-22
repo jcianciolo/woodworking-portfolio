@@ -57,8 +57,12 @@ export default function Gallery({itemData}) {
                         />
                         <ImageListItemBar
                         title={item.title}
-
-                        position="top"
+                        position="bottom"
+                        sx={{
+                          background:
+                            'linear-gradient(to top, rgba(0,0,0,0.7) 0%, ' +
+                            'rgba(0,0,0,0.3) 70%, rgba(0,0,0,0) 100%)',
+                        }}
                         />
                     </ImageListItem>
                     </CardMedia>

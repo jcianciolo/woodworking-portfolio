@@ -8,7 +8,15 @@ const Home = () => {
     return (
         <>
             <Box className="home-page">
-                <Button size="large" variant="contained" color="primary" className="home-button">Enter Site</Button>
+                <Box className="home-border">
+
+                    <Box className="home-content">
+                        <Typography variant="h1" sx={{ marginBottom: "50px" }}>AJK Woodworking</Typography>
+                        <Button size="large" variant="text" className="home-button" sx={{ color: "white" }}>Enter Site</Button>
+                    </Box>
+                    
+                </Box>
+                
             </Box>
 
         </>
