@@ -3,6 +3,12 @@ import Typography from '@mui/material/Typography'
 import Box from '@mui/material/Box'
 import Image from 'mui-image'
 import Button from '@mui/material/Button';
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+  } from "react-router-dom";
 
 const Home = () => {
     return (
@@ -12,7 +18,10 @@ const Home = () => {
 
                     <Box className="home-content">
                         <Typography variant="h1" sx={{ marginBottom: "50px" }}>AJK Woodworking</Typography>
-                        <Button size="large" variant="text" className="home-button" sx={{ color: "white" }}>Enter Site</Button>
+                        <Link to="/gallery">
+                            <Button size="large" variant="text" className="home-button" sx={{ color: "white", fontWeight: 700 }}>Enter Site</Button>
+                        </Link>
+                        
                     </Box>
                     
                 </Box>

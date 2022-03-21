@@ -28,28 +28,7 @@ const Item = ({ itemData }) => {
 
 
             <Grid container sx={{ justifyContent: 'space-evenly', alignItems: 'center' }}>
-                <Grid item xs={12} sm={8} md={6}>
-                <Box sx={{ height: 600, overflowY: 'scroll' }}>
-                    <ImageList variant="masonry" >
-                        {item.secondaryImages.map((image) => (
-                            <Card> 
-                                <CardActionArea>
-                                    <CardMedia>
-                                        <ImageListItem key={image}>
-                                            <img
-                                                src={`${image}?w=248&fit=crop&auto=format`}
-                                                srcSet={`${image}?w=248&fit=crop&auto=format&dpr=2 2x`}
-                                                alt={'cool altern'}
-                                                loading="lazy"
-                                            />
-                                        </ImageListItem>
-                                    </CardMedia> 
-                                </CardActionArea>
-                            </Card>
-                        ))}
-                    </ImageList>
-                </Box>
-                </Grid>
+                
                 <Grid item xs={12} sm={8} md={4}>
                     <Card raised>
 
@@ -86,6 +65,29 @@ const Item = ({ itemData }) => {
                             </List>
 
                     </Card>  
+                </Grid>
+
+                <Grid item xs={12} sm={8} md={6}>
+                <Box sx={{ height: '75vh', overflowY: 'auto' }}>
+                    <ImageList>
+                        {item.secondaryImages.map((image) => (
+                            <Card> 
+                                <CardActionArea>
+                                    <CardMedia>
+                                        <ImageListItem key={image}>
+                                            <img
+                                                src={`${image}?w=248&fit=crop&auto=format`}
+                                                srcSet={`${image}?w=248&fit=crop&auto=format&dpr=2 2x`}
+                                                alt={'cool altern'}
+                                                loading="lazy"
+                                            />
+                                        </ImageListItem>
+                                    </CardMedia> 
+                                </CardActionArea>
+                            </Card>
+                        ))}
+                    </ImageList>
+                </Box>
                 </Grid>
             </Grid>
         </>
