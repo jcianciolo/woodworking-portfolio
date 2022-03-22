@@ -17,6 +17,8 @@ import Divider from '@mui/material/Divider';
 import ParkIcon from '@mui/icons-material/Park';
 import LocalOfferIcon from '@mui/icons-material/LocalOffer';
 import SquareFootIcon from '@mui/icons-material/SquareFoot';
+import ModalImage from "react-modal-image";
+
 
 const Item = ({ itemData }) => {
     let { itemId } = useParams();
@@ -33,7 +35,7 @@ const Item = ({ itemData }) => {
                     <Card raised>
 
 
-                        <Typography variant="h4" sx={{ margin: 5 }}>{ item.description }</Typography>
+                        <Typography variant="h4" sx={{ margin: 5 }}>{ item.title }</Typography>
 
                         <Divider variant="middle"/>
 
@@ -75,10 +77,10 @@ const Item = ({ itemData }) => {
                                 <CardActionArea>
                                     <CardMedia>
                                         <ImageListItem key={image}>
-                                            <img
-                                                src={`${image}?w=248&fit=crop&auto=format`}
-                                                srcSet={`${image}?w=248&fit=crop&auto=format&dpr=2 2x`}
-                                                alt={'cool altern'}
+                                            <ModalImage
+                                                small={`${image}?w=248&fit=crop&auto=format`}
+                                                large={`${image}?w=248&fit=crop&auto=format&dpr=2 2x`}
+                                                alt={item.description}
                                                 loading="lazy"
                                             />
                                         </ImageListItem>
