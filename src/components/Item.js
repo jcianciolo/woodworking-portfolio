@@ -70,7 +70,7 @@ const Item = ({ itemData }) => {
                 </Grid>
 
                 <Grid item xs={12} sm={8} md={6}>
-                <Box sx={{ height: '75vh', overflowY: 'auto' }}>
+                <Box sx={{ height: '75vh', overflowY: 'auto', justifyContent: 'center', alignItems: 'center' }}>
                     <ImageList>
                         {item.secondaryImages.map((image) => (
                             <Card> 

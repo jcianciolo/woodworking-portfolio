@@ -12,7 +12,7 @@ const Contact = () => {
         <>
             <ButtonAppBar />
             <Box sx={{ display: "flex", justifyContent: "center" }}>
-                <Box sx={{ width: "50vh", marginTop: 20, border: "3px solid white", borderRadius: "5px", padding: '30px' }}>
+                <Box sx={{ width: "50vh", marginTop: 20, border: "2px solid black", borderRadius: "10px", padding: '30px' }}>
                     <Typography variant="h2">Contact Me</Typography>
                     <Typography variant="subtitle1" sx={{ margin: 2 }}>
                         Please contact me with any questions or requests!
