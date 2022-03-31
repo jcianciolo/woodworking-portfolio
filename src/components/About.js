@@ -23,6 +23,10 @@ const About = () => {
                     <Typography variant="body2" sx={{ margin: 0 }}>{aboutMe}</Typography>
                 </Grid>
             </Grid>
+
+            <div className="footer">
+                <p>Copyright 2022 Alex Kochman, John Cianciolo</p>
+            </div>
             
         </>
     )

@@ -53,3 +53,19 @@ code {
   color: white;
   /* box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; */
 }
+
+
+.footer {
+  border-top: 2px solid blue;
+  background-color: #333;
+  color: white;
+  text-align: end;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer p {
+  margin-right: 30px;
+}
