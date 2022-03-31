@@ -26,7 +26,7 @@ const Item = ({ itemData }) => {
     
     return (
         <>
-            <Typography variant="h2" sx={{ margin: 3 }}>{item.title}</Typography>
+            { /*<Typography variant="h2" sx={{ margin: 3 }}>{item.title}</Typography> */}
 
 
             <Grid container sx={{ justifyContent: 'space-evenly', alignItems: 'center' }}>
@@ -92,6 +92,10 @@ const Item = ({ itemData }) => {
                 </Box>
                 </Grid>
             </Grid>
+
+            <div className="footer">
+                <p>Copyright 2022 Alex Kochman, John Cianciolo</p>
+            </div>
         </>
     )
 }
