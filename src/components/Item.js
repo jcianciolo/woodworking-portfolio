@@ -26,12 +26,11 @@ const Item = ({ itemData }) => {
     
     return (
         <>
-            { /*<Typography variant="h2" sx={{ margin: 3 }}>{item.title}</Typography> */}
 
 
             <Grid container sx={{ justifyContent: 'space-evenly', alignItems: 'center' }}>
                 
-                <Grid item xs={12} sm={8} md={4}>
+                <Grid className="card" item xs={12} sm={8} md={4} >
                     <Card raised>
 
 
@@ -64,13 +63,13 @@ const Item = ({ itemData }) => {
                                     <ListItemText primary={`$ ${item.price}`} />
                                     </ListItemButton>
                                 </ListItem>
-                            </List>
+                        </List>
 
                     </Card>  
                 </Grid>
 
                 <Grid item xs={12} sm={8} md={6}>
-                <Box sx={{ height: '75vh', overflowY: 'auto', justifyContent: 'center', alignItems: 'center' }}>
+                <Box sx={{ height: '70vh', overflowY: 'auto', justifyContent: 'center', alignItems: 'center' }}>
                     <ImageList>
                         {item.secondaryImages.map((image) => (
                             <Card> 
@@ -94,7 +93,7 @@ const Item = ({ itemData }) => {
             </Grid>
 
             <div className="footer">
-                <p>Copyright 2022 Alex Kochman, John Cianciolo</p>
+                <p>© 2022 Alex Kochman, John Cianciolo</p>
             </div>
         </>
     )

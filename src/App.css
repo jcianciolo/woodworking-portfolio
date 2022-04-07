@@ -69,3 +69,8 @@ code {
 .footer p {
   margin-right: 30px;
 }
+
+.card {
+  background-color: #333;
+  color: white;
+}

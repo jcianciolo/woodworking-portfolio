@@ -42,7 +42,7 @@ const Contact = () => {
             </Box>
 
             <div className="footer">
-                <p>Copyright 2022 Alex Kochman, John Cianciolo</p>
+                <p>© 2022 Alex Kochman, John Cianciolo</p>
             </div>
 
 

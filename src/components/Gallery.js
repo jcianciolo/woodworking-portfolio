@@ -76,6 +76,7 @@ export default function Gallery({itemData}) {
   
           </Route>
       </Switch>
+
     </>
   );
 }
