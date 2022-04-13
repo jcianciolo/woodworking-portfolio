@@ -14,21 +14,22 @@ const About = () => {
     return (
         <>
             <ButtonAppBar />
-
-            <Typography variant="h2" sx={{ margin: 5 }}>About the artist</Typography>
+            <Box sx={{ backgroundColor: '#04293A', height: '90vh'}}>
             
-            <Box sx={{ margin: '0px 50px', border: '3px solid blue' }} >
-            <Grid container spacing={3} sx={{ alignItems: 'center', justifyContent: 'center' }}> 
-                <Grid item xs={12} sm={8} md={5} >
-                    <img src='https://images.squarespace-cdn.com/content/v1/559c3ccce4b0cebfa4ebbf72/1621033170274-7Z7URX4RP4ME63TJ8X1X/IMG_1790.jpg?format=300w' style={{borderRadius: '1rem'}} alt="alex working on a table" />
-                    <Typography variant="body1">test image text</Typography>
+                <Typography variant="h2" sx={{ padding: 5, color: 'white' }}>About the artist</Typography>
+                
+                <Box sx={{ margin: '0px 50px', padding: '10px', backgroundColor: '#064663', color: 'white', borderRadius: '5px' }} >
+                <Grid container spacing={3} sx={{ alignItems: 'center', justifyContent: 'center' }}> 
+                    <Grid item xs={12} sm={8} md={5} >
+                        <img src='https://images.squarespace-cdn.com/content/v1/559c3ccce4b0cebfa4ebbf72/1621033170274-7Z7URX4RP4ME63TJ8X1X/IMG_1790.jpg?format=300w' style={{borderRadius: '1rem'}} alt="alex working on a table" />
+                    </Grid>
+                    <Grid item xs={12} sm={8} md={5}>
+                        <Typography variant="p">{shortAboutMe}</Typography>
+                    </Grid>
                 </Grid>
-                <Grid item xs={12} sm={8} md={5}>
-                    <Typography variant="p">{shortAboutMe}</Typography>
-                </Grid>
-            </Grid>
+                </Box>
+                
             </Box>
-            
 
             <div className="footer">
                 <p>© 2022 Alex Kochman, John Cianciolo</p>

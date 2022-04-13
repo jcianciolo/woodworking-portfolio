@@ -28,10 +28,10 @@ const Item = ({ itemData }) => {
         <>
 
 
-            <Grid container sx={{ justifyContent: 'space-evenly', alignItems: 'center' }}>
+            <Grid container sx={{ height: '90vh', justifyContent: 'space-evenly', alignItems: 'center', backgroundColor: '#064663' }}>
                 
-                <Grid className="card" item xs={12} sm={8} md={4} >
-                    <Card raised>
+                <Grid className="card" item xs={12} sm={8} md={4}>
+                    <Card raised sx={{ backgroundColor: '#04293A', color: 'white' }}>
 
 
                         <Typography variant="h4" sx={{ margin: 5 }}>{ item.title }</Typography>

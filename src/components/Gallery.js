@@ -35,18 +35,22 @@ export default function Gallery({itemData}) {
             <Item itemData={itemData} />
           </Route>
           <Route exact path={path}>
-          <Typography variant="h2" sx={{ margin: 5 }}>Signature Collection</Typography>
-          <Typography variant="body1" sx={{ marginLeft: 45, marginRight: 45 }} gutterBottom >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis dolores est quas soluta officiis provident beatae sapiente at mollitia eveniet, maxime facilis quod officia sunt aliquid dolorem eius iste asperiores.
-          </Typography>
-          <Stack sx={{ pt: 4, marginBottom: 5 }} direction="row" spacing={2} justifyContent="center">
-              <Button variant="contained">See the process</Button>
-              <Button variant="outlined">Request an order</Button>
-          </Stack>
-          <Box sx={{ backgroundColor: '#444', borderTop: '3px solid blue', borderBottom: '3px solid blue' }} >
-          <ImageList variant="masonry" className="image-list" cols={3} gap={6}>
+          <Box sx={{ backgroundColor: '#04293A', padding: '20px 0px', color: 'white' }}>
+            <Typography variant="h2" sx={{ marginBottom: 2 }}>Signature Collection</Typography>
+            <Typography variant="body1" sx={{ marginLeft: 45, marginRight: 45 }} gutterBottom >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis dolores est quas soluta officiis provident beatae sapiente at mollitia eveniet, maxime facilis quod officia sunt aliquid dolorem eius iste asperiores.
+            </Typography>
+            <Stack sx={{ pt: 4 }} direction="row" spacing={2} justifyContent="center">
+                <Button variant="contained">See the process</Button>
+                <Button variant="outlined">Request an order</Button>
+            </Stack>
+          </Box>
+         
+          <Box sx={{ backgroundColor: '#064663', borderTop: '1px solid #041C32', borderBottom: '1px solid #041C32' }} >
+
+          <ImageList variant="masonry" className="image-list" cols={3} gap={10}>
           {itemData && itemData.map((item, index) => (
-              <Card id={index}>
+              <Card id={index} sx={{ backgroundColor: '#064663' }}>
                 <CardActionArea>
                   <Link to={`${url}/${index}`}> 
                     <CardMedia>

@@ -12,7 +12,7 @@ export default function ButtonAppBar() {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static" enableColorOnDark>
+      <AppBar position="static" enableColorOnDark sx={{ backgroundColor: '#041C32' }}>
         <Toolbar sx={{ justifyContent:"space-between" }}>
         <Link className="link" to="/">
           <Avatar alt='ajk' src='https://images.squarespace-cdn.com/content/v1/559c3ccce4b0cebfa4ebbf72/1436844658707-OQ5WMM3I9X4KBPCFISFF/simple+logo+art+and+wood.jpg' />
