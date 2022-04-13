@@ -70,9 +70,9 @@ const Item = ({ itemData }) => {
 
                 <Grid item xs={12} sm={8} md={6}>
                 <Box sx={{ height: '70vh', overflowY: 'auto', justifyContent: 'center', alignItems: 'center' }}>
-                    <ImageList>
+                    <ImageList variant="masonry" gap={5}>
                         {item.secondaryImages.map((image) => (
-                            <Card> 
+                            <Card sx={{ backgroundColor: '#064663' }}> 
                                 <CardActionArea>
                                     <CardMedia>
                                         <ImageListItem key={image}>

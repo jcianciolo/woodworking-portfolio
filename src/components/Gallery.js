@@ -44,7 +44,8 @@ export default function Gallery({itemData}) {
                 <Button variant="contained">See the process</Button>
                 <Button variant="outlined">Request an order</Button>
             </Stack>
-          </Box>
+            </Box>
+            
          
           <Box sx={{ backgroundColor: '#064663', borderTop: '1px solid #041C32', borderBottom: '1px solid #041C32', padding: '30px 0px' }} >
 
