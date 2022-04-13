@@ -35,9 +35,9 @@ export default function Gallery({itemData}) {
             <Item itemData={itemData} />
           </Route>
           <Route exact path={path}>
-          <Box sx={{ backgroundColor: '#04293A', padding: '20px 0px', color: 'white' }}>
+          <Box sx={{ backgroundColor: '#04293A', padding: '20px 20px', color: 'white' }}>
             <Typography variant="h2" sx={{ marginBottom: 2 }}>Signature Collection</Typography>
-            <Typography variant="body1" sx={{ marginLeft: 45, marginRight: 45 }} gutterBottom >
+            <Typography variant="body1" sx={{ }} gutterBottom >
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis dolores est quas soluta officiis provident beatae sapiente at mollitia eveniet, maxime facilis quod officia sunt aliquid dolorem eius iste asperiores.
             </Typography>
             <Stack sx={{ pt: 4 }} direction="row" spacing={2} justifyContent="center">
@@ -46,7 +46,7 @@ export default function Gallery({itemData}) {
             </Stack>
           </Box>
          
-          <Box sx={{ backgroundColor: '#064663', borderTop: '1px solid #041C32', borderBottom: '1px solid #041C32' }} >
+          <Box sx={{ backgroundColor: '#064663', borderTop: '1px solid #041C32', borderBottom: '1px solid #041C32', padding: '30px 0px' }} >
 
           <ImageList variant="masonry" className="image-list" cols={3} gap={10}>
           {itemData && itemData.map((item, index) => (

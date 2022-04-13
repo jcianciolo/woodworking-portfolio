@@ -11,8 +11,8 @@ const Contact = () => {
     return (
         <>
             <ButtonAppBar />
-            <Box sx={{ display: "flex", justifyContent: "center" }}>
-                <Box sx={{ width: "50vh", marginTop: 20, border: "2px solid black", borderRadius: "10px", padding: '30px' }}>
+            <Box sx={{ display: "flex", justifyContent: "center", height: '90vh', backgroundColor: '#04293A', color: 'white' }}>
+                <Box sx={{ width: "50vh", height: '50vh', margin: '20px 0px', border: "2px solid white",  borderRadius: "10px", padding: '30px' }}>
                     <Typography variant="h2">Contact Me</Typography>
                     <Typography variant="subtitle1" sx={{ margin: 2 }}>
                         Please contact me with any questions or requests!
