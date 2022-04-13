@@ -7,6 +7,7 @@ import CardMedia from '@mui/material/CardMedia';
 import { CardActionArea, Stack } from '@mui/material';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
+import Box from '@mui/material/Box';
 import Item from './Item'
 import { useState } from 'react'
 import ButtonAppBar from './ButtonAppBar';
@@ -42,6 +43,7 @@ export default function Gallery({itemData}) {
               <Button variant="contained">See the process</Button>
               <Button variant="outlined">Request an order</Button>
           </Stack>
+          <Box sx={{ backgroundColor: '#444', borderTop: '3px solid blue', borderBottom: '3px solid blue' }} >
           <ImageList variant="masonry" className="image-list" cols={3} gap={6}>
           {itemData && itemData.map((item, index) => (
               <Card id={index}>
@@ -73,6 +75,8 @@ export default function Gallery({itemData}) {
   
           ))}
           </ImageList>
+          </Box>
+          
   
           </Route>
       </Switch>

@@ -17,9 +17,9 @@ const Home = () => {
                 <Box className="home-border">
 
                     <Box className="home-content">
-                        <Typography variant="h1" sx={{ marginBottom: "50px" }}>AJK Woodworking</Typography>
+                        <Typography variant="h1" sx={{ marginBottom: "30px" }}>AJK Woodworking</Typography>
                         <Link to="/gallery">
-                            <Button size="large" variant="text" className="home-button" sx={{ color: "white", fontWeight: 700 }}>Enter Site</Button>
+                            <Button size="large" variant="text" className="home-button" sx={{ color: "white", fontWeight: 700 , fontSize: 24}}>Enter Site</Button>
                         </Link>
                         
                     </Box>
