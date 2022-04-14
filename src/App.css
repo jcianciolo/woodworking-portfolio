@@ -59,13 +59,22 @@ code {
 
 
 .footer {
-  border-top: 2px solid blue;
+  border-top: 1px solid white;
   background-color: #333;
   color: white;
-  text-align: end;
+  display: flex;
+  justify-content: space-between;
   position: fixed;
   left: 0;
   bottom: 0;
+  width: 100%;
+}
+.footer-gallery {
+  border-top: 1px solid white;
+  background-color: #333;
+  color: white;
+  text-align: end;
+  position: sticky;
   width: 100%;
 }
 
@@ -76,4 +85,9 @@ code {
 .card {
   background-color: #333;
   color: white;
+}
+
+.socials {
+  display: flex;
+  margin-left: 20px;
 }

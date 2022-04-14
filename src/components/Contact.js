@@ -11,8 +11,8 @@ const Contact = () => {
     return (
         <>
             <ButtonAppBar />
-            <Box sx={{ display: "flex", justifyContent: "center", height: '90vh', backgroundColor: '#04293A', color: 'white' }}>
-                <Box sx={{ width: "50vh", height: '50vh', margin: '20px 0px', border: "2px solid white",  borderRadius: "10px", padding: '30px', backgroundColor: '#064663' }}>
+            <Box sx={{ display: "flex", justifyContent: "center", alignItems: 'center', height: '90vh', backgroundColor: '#04293A', color: 'white' }}>
+                <Box sx={{ width: "50vh", height: '50vh', border: "2px solid white",  borderRadius: "10px", padding: '30px', backgroundColor: '#064663' }}>
                     <Typography variant="h2">Contact Me</Typography>
                     <Typography variant="subtitle1" sx={{ margin: 2 }}>
                         Please contact me with any questions or requests!
@@ -32,7 +32,7 @@ const Contact = () => {
                             sx={{ width: '100%' }}
                         />
                         <div>
-                            <Button variant="text" sx={{ width: '100%' }} endIcon={<SendIcon />}>
+                            <Button variant="text" sx={{ width: '100%', color: 'white' }} endIcon={<SendIcon />}>
                                 Send
                             </Button>
                         </div>
@@ -42,6 +42,10 @@ const Contact = () => {
             </Box>
 
             <div className="footer">
+                <div className="socials">
+                    <p>Insta</p>
+                    <p>Email</p>
+                </div>
                 <p>© 2022 Alex Kochman, John Cianciolo</p>
             </div>
 
