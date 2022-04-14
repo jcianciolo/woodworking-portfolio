@@ -5,6 +5,8 @@ import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField'
 import SendIcon from '@mui/icons-material/Send';
 import ButtonAppBar from './ButtonAppBar';
+import EmailIcon from '@mui/icons-material/Email';
+import InstagramIcon from '@mui/icons-material/Instagram';
 
 
 const Contact = () => {
@@ -43,8 +45,8 @@ const Contact = () => {
 
             <div className="footer">
                 <div className="socials">
-                    <p>Insta</p>
-                    <p>Email</p>
+                    <p><InstagramIcon /></p>
+                    <p><EmailIcon /></p>
                 </div>
                 <p>© 2022 Alex Kochman, John Cianciolo</p>
             </div>

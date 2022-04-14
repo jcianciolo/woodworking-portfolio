@@ -3,6 +3,8 @@ import Typography from '@mui/material/Typography'
 import Grid from '@mui/material/Grid'
 import Box from '@mui/material/Box'
 import ButtonAppBar from './ButtonAppBar';
+import EmailIcon from '@mui/icons-material/Email';
+import InstagramIcon from '@mui/icons-material/Instagram';
 
 
 const About = () => {
@@ -36,8 +38,8 @@ const About = () => {
 
             <div className="footer">
                 <div className="socials">
-                    <p>Insta</p>
-                    <p>Email</p>
+                    <p><InstagramIcon /></p>
+                    <p><EmailIcon /></p>
                 </div>
                 <p>© 2022 Alex Kochman, John Cianciolo</p>
             </div>

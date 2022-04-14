@@ -18,7 +18,8 @@ import ParkIcon from '@mui/icons-material/Park';
 import LocalOfferIcon from '@mui/icons-material/LocalOffer';
 import SquareFootIcon from '@mui/icons-material/SquareFoot';
 import ModalImage from "react-modal-image";
-
+import EmailIcon from '@mui/icons-material/Email';
+import InstagramIcon from '@mui/icons-material/Instagram';
 
 const Item = ({ itemData }) => {
     let { itemId } = useParams();
@@ -93,6 +94,10 @@ const Item = ({ itemData }) => {
             </Grid>
 
             <div className="footer">
+                <div className="socials">
+                    <p><InstagramIcon /></p>
+                    <p><EmailIcon /></p>
+                </div>
                 <p>© 2022 Alex Kochman, John Cianciolo</p>
             </div>
         </>
