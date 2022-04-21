@@ -1,6 +1,5 @@
 import React from 'react'
 import Typography from '@mui/material/Typography'
-import Grid from '@mui/material/Grid'
 import Box from '@mui/material/Box'
 import ButtonAppBar from './ButtonAppBar';
 import EmailIcon from '@mui/icons-material/Email';
@@ -16,21 +15,15 @@ const About = () => {
     return (
         <>
             <ButtonAppBar />
-            <Box sx={{ backgroundColor: '#04293A', height: '90vh' }}>
+            <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: '90vh', backgroundColor: '#04293A' }}>
             
                 <Typography variant="h2" sx={{ padding: 5, color: 'white' }}>About the artist</Typography>
                 
                 <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                 
-                    <Box sx={{ width: '50vw', border: '1px solid white', padding: '50px 0px', backgroundColor: '#064663', color: 'white', borderRadius: '5px' }} >
-                    <Grid container spacing={3} sx={{ alignItems: 'center', justifyContent: 'center' }}> 
-                        <Grid item xs={6} sm={8} md={5} >
-                            <img src='https://images.squarespace-cdn.com/content/v1/559c3ccce4b0cebfa4ebbf72/1621033170274-7Z7URX4RP4ME63TJ8X1X/IMG_1790.jpg?format=300w' style={{borderRadius: '1rem'}} alt="alex working on a table" />
-                        </Grid>
-                        <Grid item xs={6} sm={8} md={5}>
+                    <Box sx={{ width: '800px', border: '1px solid white', padding: '50px 0px', backgroundColor: '#064663', color: 'white', borderRadius: '5px' }} >
+                            <img src='https://images.squarespace-cdn.com/content/v1/559c3ccce4b0cebfa4ebbf72/1621033170274-7Z7URX4RP4ME63TJ8X1X/IMG_1790.jpg' style={{height: '350px',borderRadius: '1rem'}} alt="alex working on a table" />
                             <Typography variant="h5">{shortAboutMe}</Typography>
-                        </Grid>
-                    </Grid>
                     </Box>
                 </Box>
                 

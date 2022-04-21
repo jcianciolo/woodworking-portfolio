@@ -35,7 +35,7 @@ export default function Gallery({itemData}) {
             <Item itemData={itemData} />
           </Route>
           <Route exact path={path}>
-          <Box sx={{ display: 'flex', height: '35vh', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', backgroundColor: '#04293A', padding: '10px 0px', color: 'white' }}>
+          <Box sx={{ display: 'flex',  flexDirection: 'column', justifyContent: 'center', alignItems: 'center', backgroundColor: '#04293A', padding: '50px', color: 'white', borderBottom: '1px solid white' }}>
             <Typography variant="h2" sx={{ marginBottom: 2 }}>Signature Collection</Typography>
             <Typography variant="body1" sx={{ maxWidth: '75vh'  }} gutterBottom >
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis dolores est quas soluta officiis provident beatae sapiente at mollitia eveniet, maxime facilis quod officia sunt aliquid dolorem eius iste asperiores.

@@ -29,9 +29,8 @@ const Item = ({ itemData }) => {
         <>
 
 
-            <Grid container sx={{ height: '90vh', justifyContent: 'space-evenly', alignItems: 'center', backgroundColor: '#064663' }}>
+            <Box sx={{ height: '90vh', display: 'flex', justifyContent: 'center', alignItems: 'center', backgroundColor: '#064663' }}>
                 
-                <Grid className="card" item xs={12} sm={8} md={4}>
                     <Card raised sx={{ backgroundColor: '#04293A', color: 'white' }}>
 
 
@@ -67,10 +66,8 @@ const Item = ({ itemData }) => {
                         </List>
 
                     </Card>  
-                </Grid>
 
-                <Grid item xs={12} sm={8} md={6}>
-                <Box sx={{ height: '70vh', overflowY: 'auto', justifyContent: 'center', alignItems: 'center' }}>
+                <Box sx={{ height: '70vh', overflowY: 'auto', justifyContent: 'center', alignItems: 'center', padding: '0px 20px' }}>
                     <ImageList variant="masonry" gap={5}>
                         {item.secondaryImages.map((image) => (
                             <Card sx={{ backgroundColor: '#064663' }}> 
@@ -78,8 +75,8 @@ const Item = ({ itemData }) => {
                                     <CardMedia>
                                         <ImageListItem key={image}>
                                             <ModalImage
-                                                small={`${image}?w=248&fit=crop&auto=format`}
-                                                large={`${image}?w=248&fit=crop&auto=format&dpr=2 2x`}
+                                                small={image}
+                                                large={image}
                                                 alt={item.description}
                                                 loading="lazy"
                                             />
@@ -90,8 +87,7 @@ const Item = ({ itemData }) => {
                         ))}
                     </ImageList>
                 </Box>
-                </Grid>
-            </Grid>
+                </Box>
 
             <div className="footer">
                 <div className="socials">
