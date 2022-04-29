@@ -17,7 +17,7 @@ const About = () => {
         <>  
         
         <ButtonAppBar />
-        <Box sx={{   display: 'flex', height: '90vh',  flexDirection: 'column', justifyContent: 'center', alignItems: 'center', backgroundColor: '#04293A' }}>
+        <Box id="about-page" sx={{   display: 'flex', height: '90vh',  flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
         
                 <Typography variant="h2" sx={{ color: 'white' }}>About the artist</Typography>
                 

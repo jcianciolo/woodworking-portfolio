@@ -8,6 +8,7 @@ import Avatar from '@mui/material/Avatar';
 import { Link } from "react-router-dom";
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
+import MenuIcon from '@mui/icons-material/Menu';
 import { useState } from 'react';
 
 
@@ -20,7 +21,7 @@ export default function ButtonAppBar() {
   const handleClose = () => {
     setAnchorEl(null);
   };
-  
+
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar enableColorOnDark position='static' sx={{ backgroundColor: '#041C32' }}>
@@ -36,13 +37,21 @@ export default function ButtonAppBar() {
                     aria-expanded={open ? 'true' : undefined}
                     onClick={handleClick}
                   >
-                    Dashboard
+                    <MenuIcon />
             </Button>
             <Menu
             id="basic-menu"
             anchorEl={anchorEl}
             open={open}
             onClose={handleClose}
+            anchorOrigin={{
+              vertical: 'top',
+              horizontal: 'left',
+            }}
+            transformOrigin={{
+              vertical: 'top',
+              horizontal: 'left',
+            }}
             MenuListProps={{
               'aria-labelledby': 'basic-button',
             }}

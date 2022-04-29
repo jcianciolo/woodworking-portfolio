@@ -35,16 +35,19 @@ export default function Gallery({itemData}) {
             <Item itemData={itemData} />
           </Route>
           <Route exact path={path}>
-          <Box sx={{ display: 'flex',  flexDirection: 'column', justifyContent: 'center', alignItems: 'center', backgroundColor: '#04293A', padding: '50px', color: 'white', borderBottom: '1px solid white' }}>
-            <Typography variant="h2" sx={{ marginBottom: 2 }}>Signature Collection</Typography>
-            <Typography variant="body1" sx={{ maxWidth: '75vh'  }} gutterBottom >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis dolores est quas soluta officiis provident beatae sapiente at mollitia eveniet, maxime facilis quod officia sunt aliquid dolorem eius iste asperiores.
-            </Typography>
-            <Stack sx={{ pt: 4 }} direction="row" spacing={2} justifyContent="center">
-                <Button variant="contained">See the process</Button>
-                <Button variant="outlined">Request an order</Button>
-            </Stack>
+          <Box id="gallery-border" sx={{  backgroundColor: '#04293A', padding: '40px' }}>
+          
+            <Box id="gallery-intro" sx={{ display: 'flex',  flexDirection: 'column', padding: '100px', justifyContent: 'center', alignItems: 'center', padding: '50px', color: 'white', border: '4px solid white', borderRadius: '16px' }}>
+              <Typography variant="h2" sx={{ marginBottom: 2 }}>Signature Collection</Typography>
+              <Typography variant="body1" sx={{ maxWidth: '75vh'  }} gutterBottom >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis dolores est quas soluta officiis provident beatae sapiente at mollitia eveniet, maxime facilis quod officia sunt aliquid dolorem eius iste asperiores.
+              </Typography>
+              <Stack sx={{ pt: 4 }} direction="row" spacing={2} justifyContent="center">
+                  <Button variant="contained">See the process</Button>
+                  <Button variant="outlined">Request an order</Button>
+              </Stack>
             </Box>
+          </Box>
             
          
           <Box sx={{ backgroundColor: '#064663', borderTop: '1px solid #041C32', borderBottom: '1px solid #041C32', padding: '30px 0px' }} >

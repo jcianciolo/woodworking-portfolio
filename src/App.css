@@ -43,7 +43,8 @@ code {
   flex-direction: column;
   width: 100%;
   height: 100vh;
-  background-image: url("https://images.squarespace-cdn.com/content/v1/559c3ccce4b0cebfa4ebbf72/1492815453704-TQ4BH8OGWDJ9U5YOPCZ2/IMG_5980.JPG");
+  /* background-image: url("https://images.squarespace-cdn.com/content/v1/559c3ccce4b0cebfa4ebbf72/1492815453704-TQ4BH8OGWDJ9U5YOPCZ2/IMG_5980.JPG"); */
+  background: url("https://images.squarespace-cdn.com/content/v1/559c3ccce4b0cebfa4ebbf72/1492815453704-TQ4BH8OGWDJ9U5YOPCZ2/IMG_5980.JPG") no-repeat center center / cover;
   /* Center and scale the image nicely */
   background-position: center;
   background-size: cover;
@@ -115,4 +116,18 @@ code {
 .about-img {
   height: 300px;
   border-radius: 1rem; 
+}
+
+#basic-button {
+  color: white;
+}
+
+#about-page {
+  background: #141E30;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
+}
+
+#gallery-intro {
+  /* background: url("https://images.squarespace-cdn.com/content/v1/559c3ccce4b0cebfa4ebbf72/1492815453704-TQ4BH8OGWDJ9U5YOPCZ2/IMG_5980.JPG") no-repeat center center / cover;; */
 }
