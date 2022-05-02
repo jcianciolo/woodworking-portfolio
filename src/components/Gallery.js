@@ -23,7 +23,7 @@ import {
 } from "react-router-dom";
 
 
-export default function Gallery({itemData}) {
+export default function Gallery({itemData, processImages}) {
   let { path, url } = useRouteMatch();
 
   return (
@@ -35,26 +35,26 @@ export default function Gallery({itemData}) {
             <Item itemData={itemData} />
           </Route>
           <Route exact path={path}>
-          <Box id="gallery-border" sx={{  backgroundColor: '#04293A', padding: '40px' }}>
+          <Box className="gallery-border" sx={{  backgroundColor: 'black', padding: '40px' }}>
           
-            <Box id="gallery-intro" sx={{ display: 'flex',  flexDirection: 'column', padding: '100px', justifyContent: 'center', alignItems: 'center', padding: '50px', color: 'white', border: '4px solid white', borderRadius: '16px' }}>
+            <Box className="gallery-intro" sx={{ display: 'flex',  flexDirection: 'column', padding: '100px', justifyContent: 'center', alignItems: 'center', color: 'white', border: '4px solid white', borderRadius: '16px' }}>
               <Typography variant="h2" sx={{ marginBottom: 2 }}>Signature Collection</Typography>
               <Typography variant="body1" sx={{ maxWidth: '75vh'  }} gutterBottom >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis dolores est quas soluta officiis provident beatae sapiente at mollitia eveniet, maxime facilis quod officia sunt aliquid dolorem eius iste asperiores.
+              These beautiful works of art are carefully crafted with passion and precision. High-quality materials are selected by hand to create truly unique and beautiful tables.
               </Typography>
               <Stack sx={{ pt: 4 }} direction="row" spacing={2} justifyContent="center">
-                  <Button variant="contained">See the process</Button>
-                  <Button variant="outlined">Request an order</Button>
+                  <Button variant="outlined" color="inherit">See the process</Button>
+                  <Button variant="outlined" color="inherit">Request an order</Button>
               </Stack>
             </Box>
           </Box>
             
          
-          <Box sx={{ backgroundColor: '#064663', borderTop: '1px solid #041C32', borderBottom: '1px solid #041C32', padding: '30px 0px' }} >
+          <Box sx={{ backgroundColor: '#151516', padding: '30px 0px' }} >
 
           <ImageList variant="masonry" className="image-list" cols={3} gap={10}>
           {itemData && itemData.map((item, index) => (
-              <Card id={index} sx={{ backgroundColor: '#064663' }}>
+              <Card id={index} sx={{ backgroundColor: '#151516' }}>
                 <CardActionArea>
                   <Link to={`${url}/${index}`}> 
                     <CardMedia>
@@ -84,11 +84,49 @@ export default function Gallery({itemData}) {
           ))}
           </ImageList>
           </Box>
+
+          <Box className="gallery-border" sx={{  backgroundColor: 'black', padding: '40px' }}>
+          
+            <Box className="gallery-intro" sx={{ display: 'flex',  flexDirection: 'column', padding: '100px', justifyContent: 'center', alignItems: 'center', color: 'white', border: '4px solid white', borderRadius: '16px' }}>
+              <Typography variant="h2" sx={{ marginBottom: 2 }}>Signature Collection</Typography>
+              <Typography variant="body1" sx={{ maxWidth: '75vh'  }} gutterBottom >
+              These beautiful works of art are carefully crafted with passion and precision. High-quality materials are selected by hand to create truly unique and beautiful tables.
+              </Typography>
+              <Stack sx={{ pt: 4 }} direction="row" spacing={2} justifyContent="center">
+                  <Button variant="contained">See the process</Button>
+                  <Button variant="outlined">Request an order</Button>
+              </Stack>
+            </Box>
+          </Box>
+
+          <Box sx={{ backgroundColor: '#151516', padding: '30px 0px', height: '50vh', overflowY: 'scroll' }} >
+
+          <ImageList variant="masonry" className="image-list" cols={4} gap={10}>
+          {processImages && processImages.map((item, index) => (
+              <Card sx={{ backgroundColor: '#151516' }}>
+                <CardActionArea>
+                    <CardMedia>
+                    <ImageListItem key={index} >
+                        <img
+                        className='process-image'
+                        src={`${item}?w=248&fit=crop&auto=format`}
+                        srcSet={`${item}?w=248&fit=crop&auto=format&dpr=2 2x`}
+                        alt={item.author}
+                        loading="lazy"
+                        />
+
+                    </ImageListItem>
+                    </CardMedia>
+                </CardActionArea>
+              </Card>
+  
+          ))}
+          </ImageList>
+          </Box>
           
   
           </Route>
         </Switch>
-
 
 
     </>

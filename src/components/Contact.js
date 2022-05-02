@@ -15,15 +15,15 @@ const Contact = () => {
         <>
             <ButtonAppBar />
 
-                <Box sx={{  height: '90vh', display: "flex", flexDirection: 'column', justifyContent: "center", alignItems: 'center', backgroundColor: '#04293A', color: 'white' }}>
-                <Box sx={{ justifyContent: "center", width: "50vh", height: '50vh', border: "2px solid white",  borderRadius: "10px", padding: '30px', backgroundColor: '#064663' }}>
+                <Box sx={{  height: '90vh', display: "flex", flexDirection: 'column', justifyContent: "center", alignItems: 'center', backgroundColor: '#151516', color: 'white' }}>
+                <Box sx={{ justifyContent: "center", width: "50vh", height: '50vh', border: "2px solid white",  borderRadius: "10px", padding: '30px', backgroundColor: '#333' }}>
                 <Typography variant="h2">Contact Me</Typography>
                 <Typography variant="subtitle1" sx={{ margin: 2 }}>
                     Please contact me with any questions or requests!
                 </Typography>
                         <form>
                             <div>
-                                <TextField variant="standard" id="outlined-basic" label="Name" required />
+                                <TextField  id="outlined-basic" label="Name" required />
                                 <TextField variant="standard" id="outlined-basic" label="Email address" required  />
                             </div>
                             <TextField

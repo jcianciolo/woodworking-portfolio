@@ -17,12 +17,12 @@ const About = () => {
         <>  
         
         <ButtonAppBar />
-        <Box id="about-page" sx={{   display: 'flex', height: '90vh',  flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
+        <Box id="about-page" sx={{ height: '90vh',  display: 'flex',   flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
         
                 <Typography variant="h2" sx={{ color: 'white' }}>About the artist</Typography>
                 
             
-                <Box sx={{ display: 'flex',  alignItems: 'center', padding: '20px', width: '50vw', height: '50vh', border: '1px solid white', backgroundColor: '#064663', color: 'white', borderRadius: '5px' }} >
+                <Box sx={{ display: 'flex',  alignItems: 'center', padding: '20px', width: '50%', height: '50%', border: '1px solid white', backgroundColor: 'black', color: 'white', borderRadius: '5px' }} >
                         <img className='about-img' src='https://images.squarespace-cdn.com/content/v1/559c3ccce4b0cebfa4ebbf72/1621033170274-7Z7URX4RP4ME63TJ8X1X/IMG_1790.jpg'  alt="alex working on a table" />
                         <Typography variant="h6">{shortAboutMe}</Typography>
                 </Box>

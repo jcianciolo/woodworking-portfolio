@@ -30,7 +30,7 @@ function App() {
             <Contact />
           </Route>
           <Route path="/gallery">
-            <Gallery itemData={itemData}/>
+            <Gallery itemData={itemData} processImages={processImages}/>
           </Route>
         </Switch>
       </div>
@@ -239,3 +239,23 @@ const itemData = [
   ]
   }
 ];
+
+const processImages = [
+  'https://images.squarespace-cdn.com/content/v1/559c3ccce4b0cebfa4ebbf72/1621037808034-87IZSR4MGNSSTQXA2Z27/IMG_1707.jpg?format=500w',
+  'https://images.squarespace-cdn.com/content/v1/559c3ccce4b0cebfa4ebbf72/1621037731017-TTBLZEWZOHURSTPOVIC7/5E3A8A31-0F02-4E61-A31B-91B95A844A73.jpg?format=500w',
+  'https://images.squarespace-cdn.com/content/v1/559c3ccce4b0cebfa4ebbf72/1621039313009-LM42KTFSYFEPUQPWL82M/6.jpg?format=500w',
+  'https://images.squarespace-cdn.com/content/v1/559c3ccce4b0cebfa4ebbf72/1621039313411-6XN9HQRARO46BC1BDL6D/7.jpg?format=500w',
+  'https://images.squarespace-cdn.com/content/v1/559c3ccce4b0cebfa4ebbf72/1621037746155-N19JB04TPMGWOJJVWKP1/FA282C25-F218-47E9-96EB-7E990D4B4589.JPG?format=500w',
+  'https://images.squarespace-cdn.com/content/v1/559c3ccce4b0cebfa4ebbf72/1492819596295-VUEYM8MUS4KH8J17FR23/IMG_6029.JPG?format=500w',
+  'https://images.squarespace-cdn.com/content/v1/559c3ccce4b0cebfa4ebbf72/1621037731207-YO6MQ4ZFWAN2JPP55VQH/06FA1E6D-4604-4D52-B368-EF39D9E0A52A.JPG?format=500w',
+  'https://images.squarespace-cdn.com/content/v1/559c3ccce4b0cebfa4ebbf72/1440476534275-38728P6G5SUY64TX68CK/IMG_6821.JPG?format=500w',
+  'https://images.squarespace-cdn.com/content/v1/559c3ccce4b0cebfa4ebbf72/1621039311512-S1BB5I6EMCRNUCXX4JJF/4.jpg?format=500w',
+  'https://images.squarespace-cdn.com/content/v1/559c3ccce4b0cebfa4ebbf72/1621037737211-9VQ4YEOTT5AS6EF6UQFJ/08935DF0-59A0-4A3A-8EF4-394BF141B025.JPG?format=500w',
+  'https://images.squarespace-cdn.com/content/v1/559c3ccce4b0cebfa4ebbf72/1492819604973-P254BRM3VPZRTUO6NRHU/IMG_6032.JPG?format=500w',
+  'https://images.squarespace-cdn.com/content/v1/559c3ccce4b0cebfa4ebbf72/1621039309956-KJBOF3XQPXHK73KQBHW6/3.jpg?format=500w',
+  'https://images.squarespace-cdn.com/content/v1/559c3ccce4b0cebfa4ebbf72/1492819604141-VIFLSMZF5O9VKUPDGYZK/IMG_6031.JPG?format=500w',
+  'https://images.squarespace-cdn.com/content/v1/559c3ccce4b0cebfa4ebbf72/1492819600203-OQSFS0JNR4DCQ5A4NRVM/IMG_6030.JPG?format=500w',
+  'https://images.squarespace-cdn.com/content/v1/559c3ccce4b0cebfa4ebbf72/1621037737204-BSNLAHX5EO7EBM56BUZ1/246D5CF6-3C94-4C3C-9F73-A86183334576.JPG?format=500w',
+  'https://images.squarespace-cdn.com/content/v1/559c3ccce4b0cebfa4ebbf72/1621039308534-HIATQ8PTBWYGGOA26UPC/2.jpg?format=500w',
+  'https://images.squarespace-cdn.com/content/v1/559c3ccce4b0cebfa4ebbf72/1463975750441-8MWUSJ525UZKFMWJ8LIJ/Charonis+Coffee+Table1.jpg?format=500w'
+]
