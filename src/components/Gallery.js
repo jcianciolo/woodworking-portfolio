@@ -88,12 +88,12 @@ export default function Gallery({itemData, processImages}) {
           <Box className="gallery-border" sx={{  backgroundColor: 'black', padding: '40px' }}>
           
             <Box className="gallery-intro" sx={{ display: 'flex',  flexDirection: 'column', padding: '100px', justifyContent: 'center', alignItems: 'center', color: 'white', border: '4px solid white', borderRadius: '16px' }}>
-              <Typography variant="h2" sx={{ marginBottom: 2 }}>Signature Collection</Typography>
+              <Typography variant="h2" sx={{ marginBottom: 2 }}>Design and Construction</Typography>
               <Typography variant="body1" sx={{ maxWidth: '75vh'  }} gutterBottom >
               These beautiful works of art are carefully crafted with passion and precision. High-quality materials are selected by hand to create truly unique and beautiful tables.
               </Typography>
-              <Stack sx={{ pt: 4 }} direction="row" spacing={2} justifyContent="center">
-                  <Button variant="contained">See the process</Button>
+              <Stack sx={{ pt: 4 }} spacing={2} justifyContent="center">
+                <Button variant="contained">See the process</Button>
                   <Button variant="outlined">Request an order</Button>
               </Stack>
             </Box>

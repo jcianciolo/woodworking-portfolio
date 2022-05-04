@@ -5,14 +5,15 @@
 } */
 
 html {
-  /* height: 100%; */
   /* overflow: hidden; */
+  height: 100%;
+  margin: 0;
 }
 
 body {
   background-color: #151516;
   margin: 0;
-  height: auto;
+  height: 100%;
   font-family: 'Roboto Mono', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -42,13 +43,13 @@ code {
 .home-page {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   /* background-image: url("https://images.squarespace-cdn.com/content/v1/559c3ccce4b0cebfa4ebbf72/1492815453704-TQ4BH8OGWDJ9U5YOPCZ2/IMG_5980.JPG"); */
   background: url("https://images.squarespace-cdn.com/content/v1/559c3ccce4b0cebfa4ebbf72/1492815453704-TQ4BH8OGWDJ9U5YOPCZ2/IMG_5980.JPG") no-repeat center center / cover;
   /* Center and scale the image nicely */
-  background-position: center;
-  background-size: cover;
+  /* background-position: center;
+  background-size: cover; */
   justify-content: center;
   align-items: center;
   
@@ -57,13 +58,14 @@ code {
 .home-border {
   /* border: 3px solid black;
   border-radius: 10px; */
-  z-index: 2;
+  /* z-index: 2; */
 }
 
 .home-content {
-  padding: 30px 20px 0px 20px;
+  padding: 0px 20px;
   font-weight: 700px;
   border-radius: 10px;
+  max-width: 75vh;
   border: 3px solid white;
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0, 0.6); /* Black w/opacity/see-through */
@@ -82,7 +84,7 @@ code {
   color: white;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
   position: relative;
   padding: 10px 0px;
   /* height: 100%; */
@@ -145,4 +147,23 @@ code {
 
 #basic-menu {
   /* background-color: #151516; */
+}
+
+.footer-avatar {
+  height: 10px;
+}
+
+.homepage-title {
+  margin-bottom: 30px;
+  font-size: 72px;
+}
+
+@media (max-width: 600px) {
+  .homepage-title {
+    font-size: 48px;
+  }
+
+  .home-content {
+    margin: 0px 20px; 
+  }
 }

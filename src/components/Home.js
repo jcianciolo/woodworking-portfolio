@@ -13,20 +13,20 @@ import {
 const Home = () => {
     return (
         <>
-            <Box className="home-page">
-                <Box className="home-border">
+            <div className="home-page">
+                <div className="home-border">
 
-                    <Box className="home-content">
-                        <Typography variant="h1" sx={{ marginBottom: "30px" }}>AJK Woodworking</Typography>
+                    <div className="home-content">
+                        <h1 className="homepage-title">AJK Woodworking</h1>
                         <Link to="/gallery">
-                            <Button size="large" variant="text" className="home-button" sx={{ color: "white", fontWeight: 700 , fontSize: 24}}>Enter Site</Button>
+                            <Button size="large" variant="outlined" className="home-button" sx={{ borderColor: 'white', color: "white", fontWeight: 700 , fontSize: 24, mb: '30px' }}>Enter Gallery</Button>
                         </Link>
                         
-                    </Box>
+                    </div>
                     
-                </Box>
+                </div>
                 
-            </Box>
+            </div>
 
         </>
     )
