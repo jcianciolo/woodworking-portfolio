@@ -29,9 +29,9 @@ const Item = ({ itemData }) => {
         <>
 
 
-            <Box sx={{ height: '90vh', display: 'flex', justifyContent: 'center', alignItems: 'center', backgroundColor: '#064663' }}>
+            <Box sx={{ height: '90vh', display: 'flex', justifyContent: 'space-evenly', alignItems: 'center' }}>
                 
-                    <Card raised sx={{ backgroundColor: '#04293A', color: 'white' }}>
+                    <Card raised sx={{ backgroundColor: '#333', color: 'white' }}>
 
 
                         <Typography variant="h4" sx={{ margin: 5 }}>{ item.title }</Typography>

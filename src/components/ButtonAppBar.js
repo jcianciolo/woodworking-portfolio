@@ -23,8 +23,8 @@ export default function ButtonAppBar() {
   };
 
   return (
-    <Box sx={{ flexGrow: 1 }}>
-      <AppBar enableColorOnDark position='static' id="app-bar">
+    <Box sx={{ flexGrow: 1, height: '5vh'}}>
+      <AppBar enableColorOnDark position='sticky' id="app-bar">
         <Toolbar sx={{ justifyContent:"space-between" }}>
         <Link className="link" to="/">
           <Avatar alt='ajk' src='https://images.squarespace-cdn.com/content/v1/559c3ccce4b0cebfa4ebbf72/1436844658707-OQ5WMM3I9X4KBPCFISFF/simple+logo+art+and+wood.jpg' />

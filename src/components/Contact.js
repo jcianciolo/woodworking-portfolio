@@ -15,44 +15,31 @@ const Contact = () => {
         <>
             <ButtonAppBar />
 
-                <Box sx={{  height: '90vh', display: "flex", flexDirection: 'column', justifyContent: "center", alignItems: 'center', backgroundColor: '#151516', color: 'white' }}>
-                <Box sx={{ justifyContent: "center", width: "50vh", height: '50vh', border: "2px solid white",  borderRadius: "10px", padding: '30px', backgroundColor: '#333' }}>
-                <Typography variant="h2">Contact Me</Typography>
-                <Typography variant="subtitle1" sx={{ margin: 2 }}>
-                    Please contact me with any questions or requests!
-                </Typography>
+                <Box sx={{  minHeight: '95vh', display: "flex", flexDirection: 'column', justifyContent: "center", alignItems: 'center', backgroundColor: '#151516', color: 'white' }}>
+                    <Box sx={{ justifyContent: "center", maxWidth: "50vh", maxHeight: '50vh', border: "2px solid white",  borderRadius: "10px", padding: '30px', backgroundColor: '#333' }}>
+                        <Typography variant="h2">Contact Me</Typography>
+                        <Typography variant="subtitle1" sx={{ margin: 2 }}>
+                            Please contact me with any questions or requests!
+                        </Typography>
                         <form>
                             <div>
-                                <TextField  id="outlined-basic" label="Name" required />
-                                <TextField variant="standard" id="outlined-basic" label="Email address" required  />
+                                <TextField label="Name" required/>
+                                <TextField variant="standard" label="Email address" required  />
                             </div>
-                            <TextField
-                                variant="standard"
-                                id="outlined-textarea"
-                                label="Multiline Placeholder"
-                                placeholder="Placeholder"
-                                color='text'
-                                multiline
-                                rows={6}
-                                sx={{ width: '100%' }}
-                            />
+
                             <div>
-                                <Button variant="text" sx={{ width: '100%', color: 'white' }} endIcon={<SendIcon />}>
+                                <Button variant="text" sx={{ color: 'white' }} endIcon={<SendIcon />}>
                                     Send
                                 </Button>
                             </div>
                         
                         </form>
                     </Box>
+                    <Typography variant="p" sx={{ color: 'white' }}>© 2022 Alex Kochman, John Cianciolo</Typography>
                 </Box>
 
-            <div className="footer">
-                <div className="socials">
-                    <p><InstagramIcon /></p>
-                    <p><EmailIcon /></p>
-                </div>
-                <p>© 2022 Alex Kochman, John Cianciolo</p>
-            </div>
+
+
 
 
         </>
