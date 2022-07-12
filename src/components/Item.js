@@ -29,7 +29,7 @@ const Item = ({ itemData }) => {
         <>
 
 
-            <Box sx={{ height: '90vh', display: 'flex', justifyContent: 'space-evenly', alignItems: 'center' }}>
+            <Box sx={{ height: '90vh', display: 'flex', flexDirection: 'column', justifyContent: 'space-evenly', alignItems: 'center' }}>
                 
                     <Card raised sx={{ backgroundColor: '#333', color: 'white' }}>
 
@@ -87,15 +87,15 @@ const Item = ({ itemData }) => {
                         ))}
                     </ImageList>
                 </Box>
-                </Box>
-
-            <div className="footer">
+                
+                <div className="footer">
                 <div className="socials">
-                    <p><InstagramIcon /></p>
-                    <p><EmailIcon /></p>
+                <p><InstagramIcon /></p>
+                <p><EmailIcon /></p>
                 </div>
                 <p>© 2022 Alex Kochman, John Cianciolo</p>
-            </div>
+                </div>
+                </Box>
         </>
     )
 }

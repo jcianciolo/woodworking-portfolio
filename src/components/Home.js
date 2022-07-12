@@ -19,7 +19,7 @@ const Home = () => {
                     <div className="home-content">
                         <h1 className="homepage-title">AJK Woodworking</h1>
                         <Link to="/gallery">
-                            <Button size="large" variant="outlined" className="home-button" sx={{ borderColor: 'white', color: "white", fontWeight: 700 , fontSize: 24, mb: '30px' }}>Enter Gallery</Button>
+                            <Button size="large" variant="text" className="home-button" sx={{ borderColor: 'white', color: "white", fontWeight: 700 , fontSize: 24, mb: '30px' }}>Enter Gallery</Button>
                         </Link>
                         
                     </div>
