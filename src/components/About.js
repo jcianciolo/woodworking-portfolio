@@ -2,10 +2,9 @@ import React from 'react'
 import Typography from '@mui/material/Typography'
 import Box from '@mui/material/Box'
 import ButtonAppBar from './ButtonAppBar';
-import EmailIcon from '@mui/icons-material/Email';
-import InstagramIcon from '@mui/icons-material/Instagram';
 import Avatar from '@mui/material/Avatar';
 import { Link } from "react-router-dom";
+import Footer from './Footer';
 
 const About = () => {
 
@@ -20,19 +19,13 @@ const About = () => {
                 <Typography variant="h2" sx={{ color: 'white', mb: 2 }}>About the artist</Typography>
                 
             
-                <Box sx={{ display: 'flex', justifyContent: 'space-evenly', alignItems: 'center', padding: '30px', width: '50%', height: '50%', border: '1px solid white', backgroundColor: 'black', color: 'white', borderRadius: '5px' }} >
+                <Box sx={{ display: 'flex', justifyContent: 'space-evenly', alignItems: 'center', padding: '30px', width: '80%', height: '56%', border: '1px solid white', backgroundColor: 'black', color: 'white', borderRadius: '5px' }} >
                         <img className='about-img' src='https://images.squarespace-cdn.com/content/v1/559c3ccce4b0cebfa4ebbf72/1621033170274-7Z7URX4RP4ME63TJ8X1X/IMG_1790.jpg'  alt="alex working on a table" />
-                        <Typography variant="h6" sx={{ maxWidth: '250px'}}>{shortAboutMe}</Typography>
+                        <Typography variant="h6" sx={{ maxWidth: '100%', maxHeight: '100%' }}>{shortAboutMe}</Typography>
                 </Box>
 
 
-                <div className="footer">
-                    <div className="socials">
-                        <p><InstagramIcon /></p>
-                        <p><EmailIcon /></p>
-                    </div>
-                    <p>© 2022 Alex Kochman, John Cianciolo</p>
-                </div>
+                <Footer />
                 
         </Box>
                 </>

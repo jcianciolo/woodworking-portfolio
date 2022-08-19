@@ -28,7 +28,7 @@ const Contact = () => {
                             </div>
 
                             <div>
-                                <Button variant="text" sx={{ color: 'white' }} endIcon={<SendIcon />}>
+                                <Button variant="text" sx={{ color: 'white' }} endIcon={< endIcon />}>
                                     Send
                                 </Button>
                             </div>
