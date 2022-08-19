@@ -23,7 +23,7 @@ export default function ButtonAppBar() {
   };
 
   return (
-    <Box sx={{ flexGrow: 1, height: '5vh'}}>
+    <Box sx={{ flexGrow: 1, height: '5vh' }}>
       <AppBar enableColorOnDark position='sticky' id="app-bar">
         <Toolbar sx={{ justifyContent:"space-between" }}>
         <Link className="link" to="/">

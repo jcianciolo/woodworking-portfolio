@@ -20,6 +20,7 @@ import SquareFootIcon from '@mui/icons-material/SquareFoot';
 import ModalImage from "react-modal-image";
 import EmailIcon from '@mui/icons-material/Email';
 import InstagramIcon from '@mui/icons-material/Instagram';
+import Footer from './Footer';
 
 const Item = ({ itemData }) => {
     let { itemId } = useParams();
@@ -29,7 +30,7 @@ const Item = ({ itemData }) => {
         <>
 
 
-            <Box sx={{ height: '90vh', display: 'flex', flexDirection: 'column', justifyContent: 'space-evenly', alignItems: 'center' }}>
+            <Box sx={{ height: '85vh', display: 'flex', flexDirection: 'row', justifyContent: 'space-evenly', alignItems: 'center' }}>
                 
                     <Card raised sx={{ backgroundColor: '#333', color: 'white' }}>
 
@@ -70,7 +71,7 @@ const Item = ({ itemData }) => {
                 <Box sx={{ height: '70vh', overflowY: 'auto', justifyContent: 'center', alignItems: 'center', padding: '0px 20px' }}>
                     <ImageList variant="masonry" gap={5}>
                         {item.secondaryImages.map((image) => (
-                            <Card sx={{ backgroundColor: '#064663' }}> 
+                            <Card sx={{ backgroundColor: '#151516' }}> 
                                 <CardActionArea>
                                     <CardMedia>
                                         <ImageListItem key={image}>
@@ -88,14 +89,8 @@ const Item = ({ itemData }) => {
                     </ImageList>
                 </Box>
                 
-                <div className="footer">
-                <div className="socials">
-                <p><InstagramIcon /></p>
-                <p><EmailIcon /></p>
-                </div>
-                <p>© 2022 Alex Kochman, John Cianciolo</p>
-                </div>
                 </Box>
+                <Footer />
         </>
     )
 }

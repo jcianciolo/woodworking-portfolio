@@ -79,7 +79,7 @@ code {
 }
 
 .footer {
-  border-top: 1px solid white;
+  /* border-top: 1px solid white; */
   /* background-color: #333; */
   margin: 0;
   color: white;
@@ -88,7 +88,9 @@ code {
   justify-content: space-between;
   align-items: center;
   /* position: relative; */
-  padding: 10px 0px;
+  padding: 0px;
+  margin: 0px auto;
+  margin-top: 20px;
   /* height: 100%; */
   /* left: 0; */
   /* bottom: 0;  */
@@ -120,6 +122,8 @@ code {
 }
 
 .about-img {
+  min-height: 25%;
+  min-width: 25%;
   max-height: 100%;
   max-width: 100%;
   border-radius: 1rem; 
